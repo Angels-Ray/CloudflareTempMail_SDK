@@ -1,0 +1,2 @@
+# CloudflareTempMail_SDK
+Cloudflare临时邮箱的简略sdk
