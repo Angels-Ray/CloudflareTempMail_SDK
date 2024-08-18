@@ -35,13 +35,10 @@ class BaseApiClient:
             "Content-Type": "application/json"
         }
 
-        if proxy_url:
-            self.proxies = {
-                "http": proxy_url,
-                "https": proxy_url,
-            }
-        else:
-            self.proxies = None
+        self.proxies = {
+            "http": proxy_url,
+            "https": proxy_url,
+        }
 
     def _make_request(self, method, url, headers=None, json=None):
         headers = headers or {}
